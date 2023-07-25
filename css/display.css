@@ -1,0 +1,35 @@
+
+.display{
+    display: inline;
+    background-color: aquamarine;
+}
+
+
+.display1{
+    display: none;
+}
+.display2{
+    display: block;
+    border: 1px dotted;
+    height: 50px;
+    width: 70px;
+    background-color: aqua;
+}
+
+.display3{
+    display: block;
+    border: 1px dotted;
+    height: 50px;
+    width: 70px;
+    background-color: aqua; 
+}
+.newspape{
+    column-count: 5;
+    column-width: 200px;
+    column-rule: 3px solid purple;
+}
+}
+.ex1{
+    color: crimson;
+   display: inline-block;
+}

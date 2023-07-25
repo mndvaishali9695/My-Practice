@@ -1,0 +1,21 @@
+
+
+#div1{
+    color: blue;
+}
+
+#div2{
+    color: rgb(43, 226, 67);
+}
+div p{
+    background-color: blueviolet;
+}
+span>h1{
+    background-color: aqua;
+}
+h4 + h2{
+background-color: blue;
+}
+p ~ h3{
+    background-color: brown;
+}
