@@ -1,6 +1,9 @@
 //variables.:is Containers for Storing a data(any data types);g home
-//we can  declared variables using 4way default .let,var,const
+//we can  declared variables using 4 way Atcomtically,let,var,const
 //syntax:
+//let /var/const varible name; declration
+//let/ var/const variable_name = valve; decl+def
+
 
 
 
