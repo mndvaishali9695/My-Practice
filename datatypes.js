@@ -67,6 +67,16 @@ let  list = ['i10','volvo', 'swift','audi'];
 console.log(list);
 console.log(typeof(list ));
 
+// bigint.
+let savingAmount = BigInt('9999999999999999');
+let amount2=9999999999999999n;
+console.log(amount2);
+console.log(savingAmount);
+
+
+
+10.1456//10.15// 10.14
+
 
 
 
