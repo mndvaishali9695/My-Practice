@@ -63,5 +63,17 @@ switch (color) {
     default:
         console.log('no match');
        
-}
+    }
+          //nested if : if inside if 
+      let x = 50;
+      let y = 80;  
+
+      if (x < 100 ){
+        if (x < y){
+            if (y < 100){
+                console.log(y);
+            }
+            
+        }
+      }
 
