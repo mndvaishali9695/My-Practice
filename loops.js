@@ -77,3 +77,6 @@ for (let i in cars) {
       console.log(h);
   } while ( h < 15 ) 
   
+
+  let innerHTM = Date('23_8-23')
+  console.log(innerHTM);
