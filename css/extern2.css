@@ -1,0 +1,32 @@
+ 
+ h2{
+
+    color: brown;
+}
+/* p{ */
+    color: aquamarine;
+    
+
+/* exterenl css 1. using element selector */
+/* usining . class selector
+syntax ( period oprator)classname(pro:val)
+ */
+ .container {
+    color: rgb(255, 0, 0);
+ }
+ .address-container{
+   color: brown;
+   background-color: #00ffb3;
+   font-size: 30px;
+   width: 250px;
+   height: 70px;
+   padding: 22px;
+ }
+
+ .para{
+  color: rgb(255, 0, 13);
+  font
+ }
+
+
+

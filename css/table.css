@@ -1,0 +1,18 @@
+
+.table-main{
+    border: 1px solid orange;
+    border-collapse: collapse;
+    text-align: center;
+    padding:5px 5px
+    
+    
+}
+
+/* groping of ele selector */
+
+table,tr,th,td{
+    border: 1px solid orange;
+    border-collapse: collapse;
+    text-align: center;
+    padding:5px 5px
+}

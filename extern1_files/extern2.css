@@ -1,0 +1,17 @@
+ 
+ h2{
+
+    color: brown;
+}
+p{
+    color: aquamarine;
+    
+}
+/* exterenl css 1.element selector */
+/* class selector
+syntax ( period oprator)classname(pro:val)
+ */
+ .container {
+    color: rgb(255, 0, 0);
+ }
+

@@ -1,0 +1,29 @@
+.first-div{
+    border: 1px solid rgb(0, 0, 0);
+    height: 200px;
+    position: relative;
+     width: 200px;
+     background-color: chartreuse;
+    z-index: -1; 
+    /* 
+    +1to teck element in front -1 will teke element behind top,left ,right,button
+    z-index,will not wprk until
+    and unless we add position property having value apart from satic */
+   
+}
+.second-div{
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 151px;
+    left: 140px;
+
+}
+
+
+
+.img-container{
+float: right;
+}
