@@ -1,4 +1,5 @@
 import { Component } from '@angular/core'; //impot section
+import { Router } from '@angular/router';
 
 @Component({ //component directive/decorator
   selector: 'app-root',
@@ -50,7 +51,7 @@ circles: { id: number, isSelected: boolean, backgroundColor: string }[] = [];
   test = "Kolhapur";
   test1 = "nashik";
 
-  constructor() { }    //to inject dependancies
+  constructor(private router:Router) { }    //to inject dependancies
 
   //life cycle hooks 
 
@@ -148,6 +149,10 @@ circles: { id: number, isSelected: boolean, backgroundColor: string }[] = [];
      };
      this.circles.push(newCircle);
      this.nextCircleId++;
+   }
+
+   landing(){
+    this.router.navigateByUrl('landing.')
    }
 
 }

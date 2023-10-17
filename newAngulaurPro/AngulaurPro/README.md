@@ -1,6 +1,6 @@
-# ProjectA
+# AngulaurPro
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
 
 ## Development server
 
@@ -25,12 +25,3 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-Routing angular : redirecting from one component to another
-simple routing:
-1. <router-outlet> directive to app.como.html : prepare for def.
-2. to set landing compo as a landing screen of the application 
-add path into the routing.module.ts file
-e.g. {path : '' , component: LandingComponent},
-3. on button click , click event will trigger/call function , add logic to redirect to component
-4. import Router class and use navigateByUrl method to redirect
-e.g this.router.navigateByUrl('path_name')

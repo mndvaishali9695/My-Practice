@@ -54,7 +54,7 @@ event binding : event binding is used to handle the events raised from the DOM l
    <!-- Two way data binding: two-way binding we can bind data from component to view and vice-versa.
 i.e. Whenever user make changes in the Model, it will be reflected in the View and when user make changes in View, it will be reflected in Model.
 two way data binding, property binding and event binding are combined togethe 
-<br><br>
+<br><br> 
 <input type="text"[(ngModel)] ='studentName' >: Student Name
 <p>{{studentName}}</p>
 
@@ -97,7 +97,7 @@ emp Name : <input type="text" [(ngModel)]="empName"><br>
   
 
 </div> -->
-<button (click)="addCircle()">Add Circle</button>
+<!-- <button (click)="addCircle()">Add Circle</button>
 <div *ngFor="let circle of circles"
      [class.selected]="circle.isSelected"
      [style.background-color]="circle.backgroundColor"
@@ -107,7 +107,12 @@ emp Name : <input type="text" [(ngModel)]="empName"><br>
 {{test}}
  <input type="text"[value]= "test">
   <input type="text"[(ngModel)]= "test1">
-  {{test1}}
+  {{test1}} -->
+  
+
+  
+  <router-outlet></router-outlet>
+  
   
 
 
