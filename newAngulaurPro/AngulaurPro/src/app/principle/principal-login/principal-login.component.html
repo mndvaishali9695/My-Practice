@@ -1,1 +1,71 @@
-<p>principal-login works!</p>
+<div class="temp-form-container">
+    <br>
+    <h2 *ngIf="showLoginForm"> Login Form</h2> <br><br>
+    <form #loginForm="ngForm" autocomplete="off" *ngIf="showLoginForm">
+        <div>
+            <label>UserName</label>
+        </div>
+        <div>
+            <input type="text" #userName="ngModel" ngModel name="userName" required pattern="[a-zA-Z ]*$">
+        </div>
+        <br>
+        <span class="error" *ngIf="userName.touched && userName.errors?.['required']">
+            UserName is required
+        </span>
+        <span class="error" *ngIf="userName.touched && userName. dirty
+         && userName.errors?.['pattern']">
+            Please enter alphabets only
+        </span>
+        <br>
+        <div>
+            <label>Password</label>
+            <div>
+
+                <input ngModel #password="ngModel" type="text" name="passwprd" required
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d|\W).{8,}$">
+            </div>
+            <samp class="error" *ngIf="password.touched && password.errors?.['required']">
+                password reqired</samp>
+            <samp class="error" *ngIf="password.touched && password.errors?.['pattern']">
+                Please match password formate </samp><br>
+
+
+        </div>
+
+        <div>
+            <button class="sbt-btn" (click)="submit(loginForm.value)">Submit</button>
+        </div><br><br>
+        <button class="for-pass" class="sbt-btn" (click)="forgetPassword()">Forget Password</button>
+    </form> <br>
+
+    <h2 *ngIf="!showLoginForm"> Forgot Password Form</h2> <br>
+    <form *ngIf="!showLoginForm" #forgetPasswordForm="ngForm">
+
+        New Password <br>
+
+        <input type="text" #newPassword="ngModel" ngModel name="newPassword" required 
+       
+        (blur)=" passwordMatch(newPassword.value ,conPassword.value)"> <br>
+         <!--  (blur)="newPasswordFiledValue(newPassword.value);newPasswordMatch()" -->
+
+        <samp class="error" *ngIf="newPassword.touched && newPassword.errors?.['required']"> 
+            Please Enter confirm  Password ,it is required
+        </samp> <br>
+        ConfirmPassword <br>  
+
+        <input type="text" #conPassword ="ngModel" ngModel name ="confirmPassword"
+         required (blur)="passwordMatch( newPassword.value,conPassword.value)"> 
+        <br>
+
+       <samp *ngIf="isMatch" class="error">New Passwordand confirm password should match</samp>
+        
+       <br><br>
+       
+        <div>
+            <button class="sbt-btn" (click)="submit(forgetPasswordForm.value)" [disabled]="!forgetPasswordForm.value">Submit</button>
+        </div>
+    </form>
+    
+
+    <br><br><br>
+</div>

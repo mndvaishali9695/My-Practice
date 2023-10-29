@@ -5,6 +5,7 @@ import { PrincipleRoutingModule } from './principle-routing.module';
 import { PrincipleHomeComponent } from './principle-home/principle-home.component';
 import { PrincipalLoginComponent } from './principal-login/principal-login.component';
 import { PrincipalSignUpComponent } from './principal-sign-up/principal-sign-up.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 console.log('prici');
 
 
@@ -17,7 +18,9 @@ console.log('prici');
   ],
   imports: [
     CommonModule,
-    PrincipleRoutingModule
+    PrincipleRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class PrincipleModule { }

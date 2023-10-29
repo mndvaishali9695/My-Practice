@@ -10,7 +10,8 @@ export class PrincipleHomeComponent {
   constructor(public route : Router){}
 
   signUp(){
+    // debugger
     this.route.navigateByUrl('PrincipleMod/signUp')
-  }
+   }
 
 }
