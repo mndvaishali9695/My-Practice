@@ -1,0 +1,18 @@
+<p>parent works!</p>
+
+<input type="text" [(ngModel)]="name">  Name  <br>
+{{dataFromChildComponent}}
+{{studentDatafromChild?.name}}
+
+<button (click)="setSubjetData()"> click to set subject</button>
+<br>
+--------------------------------------------------------
+
+
+
+<app-child [dataFromParentCompo] = "name" 
+(childDataEvent)="dataFromChild($event)"
+[colorsFromPrent]="colors" (studentEvent)="studentData($event)"
+></app-child>
+---------------------------------------------
+<app-princilpalsuccess></app-princilpalsuccess>

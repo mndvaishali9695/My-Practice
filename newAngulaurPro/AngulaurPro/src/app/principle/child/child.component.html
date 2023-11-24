@@ -1,0 +1,13 @@
+<p>child works!</p>
+{{dataFromParentCompo}}<br><br>
+<input type="text" [(ngModel)]="data">
+<button (click)="submit()">submit</button>
+<br>
+
+<ul *ngFor="let color of colorsFromPrent">
+    <li>{{color}}</li>
+</ul>
+
+{{city}}<br><br><br>
+
+<button routerLink="/PrincipleMod/PrincipalSuccess"></button>

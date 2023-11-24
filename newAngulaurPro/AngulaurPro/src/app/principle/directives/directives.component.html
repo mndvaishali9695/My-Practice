@@ -1,0 +1,101 @@
+<p>directives works!</p>
+
+<!-- Structural directiveb 
+    1.*ngIf,To add/remove elements from Dom
+    2.*ngSwitch,
+    3.*ngFor -->'
+
+    <button (click)="toshowAddress()">Show Address</button>
+    <button (click)="toShowCity()">Show City</button>
+    <!-- <button (click)="toShowCars()">Show Cars</button> -->
+    <br>
+    
+    <div *ngIf="city">
+        Mumbai
+    </div>
+    
+    <div *ngIf="showAddr">
+        A-903,NG Canary, Miraroad,Mumbai
+    </div>
+    
+    <p *ngIf="amount">
+         Amount: {{amount}}
+    </p>
+    <p *ngIf="age >= 18 && age < 60 ">
+      valid employee  
+    </p>
+    
+    <!-- 
+    <div>
+    {{cars}}
+    </div> -->
+    
+    <ul>
+        <li>swift</li>
+        <li>Audi</li>
+        <li>Min cup</li>
+    </ul>
+    
+    <ul *ngFor="  let carName of cars">
+        <li>{{carName}}</li>
+    </ul>
+    
+    <div>
+        <ul *ngFor="let student of students">
+            <li>{{student.name}} - {{student.age}}</li>
+        </ul>
+    </div>
+    
+    <div *ngFor="let empData of emp">
+    <p>{{empData.name.firstName}}</p>
+    
+    </div>
+    
+    <div>
+        <table>
+            <tr  *ngIf="showTable">
+                <th *ngFor="  let heading of tableheding">{{heading}}</th>
+            </tr>
+            <tr *ngFor="let student of students">
+                <td>{{student.name}} </td>
+                <td>{{student.age}} </td>
+                <td>{{student.city}} </td>
+                <button>show</button>
+            </tr>
+        </table>
+    </div>
+    
+        <input type="text" [(ngModel)] = inputValue>
+        <button (click)="inputBoxVal()">submit</button>
+        
+        <p *ngFor="let value of data">{{value}}</p>
+    
+        <div [ngSwitch]="color">
+            <p *ngSwitchCase="'green'">green</p>
+            <p *ngSwitchCase="'red'">Red</p>
+            <p *ngSwitchCase="'yellow'">yellow</p>
+        </div>
+
+        <div [class.cls1] = "inputValue == 40" 
+        [class.cls2] = "inputValue == 50"
+        [class.cls3] = "inputValue == 60">
+            I scrored 90 marks...
+        </div>
+
+
+
+<div [ngClass]="rating == 4 ? 'ngcls1' : 'ngcls2' ">
+    I like pune
+</div>
+
+<p style="background-color: blueviolet;">
+    duwuhdswql,wll</p>
+
+    <p [ngStyle]="{'background-color':getCss()}">
+        sskkko;lk;plll
+    </p>
+
+        <br><br>
+        <br> <br>
+        <br> <br>
+        <br> <br>

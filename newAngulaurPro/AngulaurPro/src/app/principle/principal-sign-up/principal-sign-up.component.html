@@ -24,8 +24,9 @@
     <samp class="err" *ngIf="principalSignUpForm.get('emailId')?.errors?.['pattern']">Enter valid mail Id</samp>
     <br>
     <label for="">Birth Date</label><br>
-    <input type="text" placeholder="dd/mm/yyy" formControlName="dob" (blur)="calYear()"> <br>
-    Your age :{{userAge}}
+    <input type="text" placeholder="dd/mm/yyyy"  formControlName="dob" (keyup)="calYear($event)">
+    <span>Your age : {{userAge}}</span><br>
+
     <samp class="err" *ngIf="principalSignUpForm.get('dob')?.errors?.['pattern']">Please enter Date in proper
       formate</samp>
     <br>
@@ -42,9 +43,9 @@
     <input type="radio" formControlName="gender" value="Female" (change)="gender()">Female <br>
     <div class="err" *ngIf="isGenderSelected ">Please select gender</div>
     <div>
-      <label>Password</label>
+      <label for=""> password</label>
       <div>
-        <input [type]=" showPass ?'text':'password'">
+        <input [type]=" showPass ?'text':'password'"formControlName="password">
         <samp class="p-viewer" *ngIf="showPass" (click)="showPassword()">
           <i class="bi bi-eye"></i>
 
@@ -90,11 +91,13 @@
       </div>
     </div>
 
+    <br>
+        <input type="text" maxlength="15" appCharOnly> Char only directive
     <br><br>
 
 
-    <button (click)="submit()" [disabled]="!principalSignUpForm.valid">submit</button><br>
-
+    <button (click)="submit()" *ngIf="!recordToUpdate" [disabled]="!principalSignUpForm.valid">submit</button><br>
+    <button (click)="update()" *ngIf="recordToUpdate"> Update </button>
 
   </form>
 </div>

@@ -1,0 +1,34 @@
+{
+  "principl": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "name": "Vaishali",
+      "city": "Pune",
+      "id": 3
+    },
+    {
+      "city": "pune",
+      "name": "vaishali",
+      "mob": 777,
+      "id": 4
+    },
+    {
+      "userName": "vaishali",
+      "emailId": "vath21@gmail.com",
+      "mobNo": "2222222222",
+      "dob": "",
+      "TC": true,
+      "gender": "male",
+      "cars": "Jaguar",
+      "customVal": "",
+      "oldField": "",
+      "password": "seema123",
+      "id": 6
+    }
+  ]
+}

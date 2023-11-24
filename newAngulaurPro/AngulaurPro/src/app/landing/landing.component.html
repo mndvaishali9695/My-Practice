@@ -1,4 +1,26 @@
 <div class="container">
+    <br><br>
     
-    <button class="" (click)="principleModLoad()">Priciple</button>
+    <input type="text" [(ngModel)]="inputBoxVal"> type here<br><br>
+    <button (click)="principleModLoad()">Priciple</button>
+    <button (click)="getApi()">GET API</button>
+    <button (click)="deleteApi()"> Delete</button>
+    <button (click)="putApi()"> Put API</button>
+    <br><br><br><br>
+
+    <button routerLink="/PrincipleMod/parent">Parent comoponet</button>
+    <button (click)="subjectModule()">Subject Module</button>
+</div>
+<br>
+<div *ngFor="let data of principalData">
+    {{data.userName}}
+</div>
+<div>
+    {{name | uppercase}} <br>
+    {{name | lowercase}} <br>
+    {{ date | date}}<br>
+    {{ date | date : 'fullDate'}}<br>
+    {{ date | date : 'shortDate'}}<br>
+
+    <button routerLink="/table">Table</button>
 </div>
