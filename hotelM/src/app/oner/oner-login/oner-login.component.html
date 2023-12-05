@@ -1,0 +1,29 @@
+<div class="back-img">
+    <div class=" title">Login Form</div>
+    <!-- <input class="form-control me -2"type="search"placeholder="search"
+    aria-label="search">
+    <button class="btn btn-outline-success"type="submit">search</button> -->
+    <form [formGroup]="loginForm" class="formAlinment">
+        <mat-form-field >
+            <mat-label>User Name</mat-label>
+            <input type="text" matInput formControlName="userName">
+          
+            <mat-hint *ngIf="!loginForm.get('userName')?.touched">Please enter User Name </mat-hint>
+            <mat-error>User Name is <strong>required</strong></mat-error>
+        </mat-form-field>
+
+        <br>
+        <mat-form-field >
+            <mat-label class="pass">Password</mat-label>
+            <input type="text" matInput>
+            <mat-icon matSuffix>visibility_off</mat-icon>
+            <mat-hint *ngIf="!loginForm.get('userName')?.touched" class="hint">Please Enter Password</mat-hint> 
+            <mat-error>Password is <strong>required</strong></mat-error> 
+       
+        </mat-form-field>
+        <br>
+    
+        <button mat-raised-button color="accent">Login</button>
+        <button mat-raised-button color="warn" routerLink="/signUp">New User?</button>
+    </form>
+</div>

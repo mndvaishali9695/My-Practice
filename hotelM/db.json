@@ -1,0 +1,44 @@
+{
+  "admin": [],
+  "owner ": [],
+  "user": [],
+  "hotelDetails": [
+    {
+      "ownerName": "deeva",
+      "mobileNumber": "896667890",
+      "hotelName": "welcome",
+      "hotelAdress": "sai complex hosji naar pune",
+      "hotelNumber": "7789809093",
+      "hotelMenu": "rtyi,vadhj",
+      "rooms": "9",
+      "pass": "seema333",
+      "checkBox": "",
+      "id": 1
+    },
+    {
+      "onerName": "vaishali ",
+      "mobileNumber": "89999342",
+      "hotelName": "welcome hotel",
+      "hotelAdress": "a wing ,sema naae pune 30",
+      "hotelNumber": "789909021",
+      "hotelMenu": "saamoo",
+      "rooms": "8",
+      "pass": "vaishuu@12334",
+      "checkBox": "",
+      "id": 2
+    },
+    {
+      "onerName": "vaishali ",
+      "mobileNumber": "89999342",
+      "hotelName": "welcome hotel",
+      "hotelAdress": "a wing ,sema naae pune 30",
+      "hotelNumber": "789909021",
+      "hotelMenu": "saamoo",
+      "rooms": "8",
+      "pass": "vaishuu@12334",
+      "checkBox": "",
+      "id": 3
+    }
+  ],
+  "hotelBooking": []
+}
