@@ -13,6 +13,7 @@ export class OnerLoginComponent {
   showWorning=true; 
  showPass:boolean=false; 
  onerData:any;
+
  showpass = false;
  
  constructor(private fb:FormBuilder,private router:Router,private apiCallService: ApiCallService,
@@ -34,9 +35,9 @@ export class OnerLoginComponent {
  
 
 
-getOnerData(){
+  async getOnerData(){
    let endPoint ="oner";
-  this.apiCallService.getApiCall(endPoint).subscribe(res=>{
+  (await this.apiCallService.getApiCall(endPoint)).subscribe(res=>{
    this.onerData = res;
    console.log("onerdata",this.onerData);
    
@@ -59,6 +60,9 @@ login(){
   }
 
   if(matchedObj){
+    this.apiCallService.onerName = this.loginForm.value.userName;
+    console.log("data",this.apiCallService.onerName);
+    
     this.router.navigateByUrl('oner/onerSuccess');
   }
   else{

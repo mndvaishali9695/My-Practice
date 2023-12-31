@@ -7,10 +7,14 @@ import { LandingComponent } from './commnonScreen/landing/landing.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent
+    LandingComponent,
+
+   
   ],
   imports: [
     BrowserModule,

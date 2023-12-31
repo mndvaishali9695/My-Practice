@@ -5,7 +5,7 @@ import { OnerSuccessComponent } from './oner-success/oner-success.component';
 import { HotelRegistrationComponent } from './hotel-registration/HotelRegistrationComponent';
 
 const routes: Routes = [
-  {path : "", component : OnerLoginComponent},
+  { path : "", component : OnerLoginComponent},
   { path:"onerSuccess", component: OnerSuccessComponent},
   { path:"hotelReg",component:HotelRegistrationComponent}
 ];

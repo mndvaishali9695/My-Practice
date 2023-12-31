@@ -1,5 +1,23 @@
 <div>
     <button>Back</button>
-    <button routerLink="/oner/hotelReg">New hotel Registration</button>
-    <button>Hotel List</button>
-</div>
+    <button routerLink="/oner/hotelReg" (click)="new()">New hotel Registration</button>
+    <button (click)="showHotelDetails()">Hotel List</button>
+<input type="search" [(ngModel)]="searchText">
+
+<div *ngIf="shwoRecord">
+    <table>
+        <tr>
+            <th *ngFor="let heading of headings"> {{heading}}</th>
+        </tr>
+        <tr *ngFor="let data of hotelDetailsByOner |search: searchText "> 
+             <td>{{data.hotelName}}</td>
+            <td>{{data.hotelAdress}}</td>
+            <td>{{data.hotelNumber}}</td>
+            <td>{{data.hotelMenu}}</td>
+            <td>{{data.rooms}}</td> 
+            
+            <td><mat-icon (click)="edit(data.id)">create</mat-icon></td>
+            <td><mat-icon (click)="delete(data.id)">delete</mat-icon></td>
+        </tr>
+    </table>
+</div> 
