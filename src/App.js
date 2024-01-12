@@ -5,7 +5,7 @@ import ImageDisplayer from "./ImageDisplayer"
 function App(){
   return(
     <div>
-    <h1>heading</h1>
+    <h1>heading</h1> sdwwdwdwdw
     <ImageDisplayer/>
     </div>
     
