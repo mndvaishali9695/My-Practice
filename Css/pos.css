@@ -1,0 +1,50 @@
+.pos{
+    position: static;
+    border: 1px solid black;
+    height: 60px;
+    width: 100px;
+}
+
+.abs{
+    position: static;
+    height: 90px;
+    width: 50px;
+    border: 1px solid black;
+    top: 100px;
+    right: 50px
+}
+
+.stikc{
+    position: sticky;
+    /* height: 30px; */
+    width: 1400px;
+    border: 1px solid black;
+    top: 0px;
+    background-color: cadetblue;
+}
+
+.main{
+    height: 700px;
+}
+.Footer{
+    height: 30px;
+    width: 1300px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 0, 123);
+    position: fixed;
+    bottom: 0px;
+}
+.sidebar{
+    position: relative;
+    height: 1000;
+    width: 100px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: blue;
+}
+
+.cposition{
+position: absolute;
+top: 250;
+left: 101;
+padding: 1px
+}

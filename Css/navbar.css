@@ -1,0 +1,18 @@
+.navbar_container{
+    background-color: #00ffa2;
+    width: 500;
+    height: 30;
+    padding: 10 20;
+    margin: auto;
+}
+div.navbar_container a{
+    text-decoration: none;
+}
+
+.main{
+    color: burlywood;
+    cursor: pointer;
+}
+.newspaper{
+    columns: 2;
+}

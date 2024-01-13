@@ -1,0 +1,48 @@
+.img{
+    background-image: url("E:\LearningA\My-Practice\free-images.jpg");
+    background-repeat: no-repeat;
+    height: 100px; 
+}
+.navbar{
+    background-color: rgb(0, 139, 74);
+        overflow: hidden;
+        background-image: url("nature.jpg");
+        background-repeat: no-repeat;
+        height: 100px;
+}
+.navbar a{
+    text-decoration: none   ;
+    font-size: 30px;
+    padding: 5px 5px;
+    color: rgb(255, 68, 0);
+    float: left;
+}
+.dropdown{
+    float: left;
+   
+}
+.Dropdwon_btn{
+    font-size: 26px;
+    color: brown;
+    background-color: rgb(30, 228, 122);
+    border: none;
+    position: relative;
+    top: 1px;
+    padding: 8px 9px;
+}
+.Dropdwon-conten a{
+    position: absolute;
+    background-color: antiquewhite;
+    min-width: 156px;
+    display:block;
+    left: 294px;
+    top: 53px;
+    z-index: 1;
+}
+
+.dropdown:hover .dopdown-content{
+    display: block;
+}
+.dopdown-content a:hover{
+    background-color: aqua;
+}
