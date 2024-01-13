@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+//how to create a component
+//function component
+//first Letter should be  capital of a component
+import "./app.css"
+import Navigation from "./components/Navigation";
+import Main from "./components/Main";
+import Bio from "./components/Bio";
+function App(){
+// JSX=>Javascript xml
+  return(
+    <div>
+      {/* /* <img src= "https://buffer.com/library/free-images/"/>
+     <h1>hello this is my first component</h1> */ }
+      <Navigation/>
+      <Main/>
+      <Bio/>
     </div>
-  );
+   
+  )
 }
 
-export default App;
+export  default App;

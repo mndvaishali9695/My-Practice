@@ -1,0 +1,17 @@
+.main_container{
+  
+    color: white;
+    text-align: center;
+    height: 88vh;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk=");
+}
+.heding1_main{
+    padding: 20vh;
+}
+.main_container > h5{
+font-size: 16px;
+font-weight: 100;
+}

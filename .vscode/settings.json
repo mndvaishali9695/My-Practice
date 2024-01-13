@@ -1,0 +1,6 @@
+{
+    "workbench.editor.centeredLayoutFixedWidth": true,
+    "python.analysis.diagnosticSeverityOverrides": {},
+    "accessibility.voice.speechTimeout": 1200,
+    "workbench.editor.closeEmptyGroups": false
+}
